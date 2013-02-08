@@ -35,6 +35,7 @@ build/
 CVS
 
 *.DS_Store
+.DS_Store
 
 # automatic backup files
 *~.nib
