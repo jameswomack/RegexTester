@@ -18,10 +18,16 @@
     BOOL usesNSRegularExpressionAnchorsMatchLines;
     BOOL usesNSRegularExpressionUseUnixLineSeparators;
     BOOL usesNSRegularExpressionUseUnicodeWordBoundaries;
+    BOOL highlightMode;
+    NSColor* highlightColor;
+    NSFont* highlightFont;
+    NSColor* otherColor;
+    NSFont* otherFont;
 }
 
 @property (unsafe_unretained) IBOutlet NSTextView *regexTextView;
 @property (unsafe_unretained) IBOutlet NSTextView *plainTextView;
+@property (unsafe_unretained) IBOutlet NSView *checkboxesBackgroundView;
 
 @property BOOL usesNSRegularExpressionCaseInsensitive;
 @property BOOL usesNSRegularExpressionAllowCommentsAndWhitespace;
@@ -30,7 +36,12 @@
 @property BOOL usesNSRegularExpressionAnchorsMatchLines;
 @property BOOL usesNSRegularExpressionUseUnixLineSeparators;
 @property BOOL usesNSRegularExpressionUseUnicodeWordBoundaries;
+@property BOOL highlightMode;
+@property (strong) NSArray* styleMenuStrings;
 
--(NSMatchingOptions)options;
+-(NSRegularExpressionOptions)options;
+
+- (IBAction)colorPanelColorDidChange:(NSColorPanel*)theColorPanel;
+- (IBAction)changeFont:(id)sender;
 
 @end

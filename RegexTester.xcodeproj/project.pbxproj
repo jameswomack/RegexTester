@@ -14,6 +14,9 @@
 		B345AACE14A8967100696DC7 /* MTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B345AACD14A8967100696DC7 /* MTAppDelegate.m */; };
 		B345AAD114A8967200696DC7 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = B345AACF14A8967200696DC7 /* MainMenu.xib */; };
 		B345AAD914A8970500696DC7 /* AppController.m in Sources */ = {isa = PBXBuildFile; fileRef = B345AAD814A8970500696DC7 /* AppController.m */; };
+		BD41F05316C49FD3007FDC87 /* Fonts in Resources */ = {isa = PBXBuildFile; fileRef = BD41F05216C49FD3007FDC87 /* Fonts */; };
+		BD41F05616C4A6B6007FDC87 /* Filebase.m in Sources */ = {isa = PBXBuildFile; fileRef = BD41F05516C4A68E007FDC87 /* Filebase.m */; };
+		BD41F05916C4BC82007FDC87 /* NSBezierPath+MCAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = BD41F05816C4BC77007FDC87 /* NSBezierPath+MCAdditions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +35,11 @@
 		B345AAD014A8967200696DC7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		B345AAD714A8970500696DC7 /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppController.h; sourceTree = "<group>"; };
 		B345AAD814A8970500696DC7 /* AppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppController.m; sourceTree = "<group>"; };
+		BD41F05216C49FD3007FDC87 /* Fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Fonts; sourceTree = "<group>"; };
+		BD41F05416C4A0AB007FDC87 /* Filebase.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; name = Filebase.h; path = Library/Filebase.h; sourceTree = "<group>"; };
+		BD41F05516C4A68E007FDC87 /* Filebase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = Filebase.m; path = Library/Filebase.m; sourceTree = "<group>"; };
+		BD41F05716C4BC77007FDC87 /* NSBezierPath+MCAdditions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "NSBezierPath+MCAdditions.h"; path = "Library/NSBezierPath+MCAdditions.h"; sourceTree = "<group>"; };
+		BD41F05816C4BC77007FDC87 /* NSBezierPath+MCAdditions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "NSBezierPath+MCAdditions.m"; path = "Library/NSBezierPath+MCAdditions.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +93,7 @@
 		B345AAC014A8967100696DC7 /* RegexTester */ = {
 			isa = PBXGroup;
 			children = (
+				BD41F05216C49FD3007FDC87 /* Fonts */,
 				B345AACC14A8967100696DC7 /* MTAppDelegate.h */,
 				B345AACD14A8967100696DC7 /* MTAppDelegate.m */,
 				B345AACF14A8967200696DC7 /* MainMenu.xib */,
@@ -103,6 +112,10 @@
 				B345AAC614A8967100696DC7 /* main.m */,
 				B345AAC814A8967100696DC7 /* RegexTester-Prefix.pch */,
 				B345AAC914A8967100696DC7 /* Credits.rtf */,
+				BD41F05716C4BC77007FDC87 /* NSBezierPath+MCAdditions.h */,
+				BD41F05816C4BC77007FDC87 /* NSBezierPath+MCAdditions.m */,
+				BD41F05416C4A0AB007FDC87 /* Filebase.h */,
+				BD41F05516C4A68E007FDC87 /* Filebase.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -133,7 +146,7 @@
 		B345AAAD14A8967100696DC7 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0420;
+				LastUpgradeCheck = 0460;
 			};
 			buildConfigurationList = B345AAB014A8967100696DC7 /* Build configuration list for PBXProject "RegexTester" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -160,6 +173,7 @@
 				B345AAC514A8967100696DC7 /* InfoPlist.strings in Resources */,
 				B345AACB14A8967100696DC7 /* Credits.rtf in Resources */,
 				B345AAD114A8967200696DC7 /* MainMenu.xib in Resources */,
+				BD41F05316C49FD3007FDC87 /* Fonts in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -173,6 +187,8 @@
 				B345AAC714A8967100696DC7 /* main.m in Sources */,
 				B345AACE14A8967100696DC7 /* MTAppDelegate.m in Sources */,
 				B345AAD914A8970500696DC7 /* AppController.m in Sources */,
+				BD41F05616C4A6B6007FDC87 /* Filebase.m in Sources */,
+				BD41F05916C4BC82007FDC87 /* NSBezierPath+MCAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,6 +228,10 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -226,6 +246,7 @@
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				ONLY_ACTIVE_ARCH = YES;
@@ -239,6 +260,10 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -247,6 +272,7 @@
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				SDKROOT = macosx;
@@ -256,6 +282,8 @@
 		B345AAD514A8967200696DC7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RegexTester/RegexTester-Prefix.pch";
 				INFOPLIST_FILE = "RegexTester/RegexTester-Info.plist";
@@ -267,6 +295,8 @@
 		B345AAD614A8967200696DC7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RegexTester/RegexTester-Prefix.pch";
 				INFOPLIST_FILE = "RegexTester/RegexTester-Info.plist";
@@ -294,6 +324,7 @@
 				B345AAD614A8967200696DC7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
