@@ -3,7 +3,18 @@ m http://blog.illuminex.com/2009/10/better-sample-gitignore-file-for-xcode.html
 
 # Mac OS X Finder and whatnot
 .DS_Store
+_Store
+.AppleDouble
+.LSOverride
+Icon
 
+
+# Thumbnails
+._*
+#
+# # Files that might appear on external disk
+.Spotlight-V100
+.Trashes
 
 # Sparkle distribution Private Key (Don't check me in!)
 dsa_priv.pem
