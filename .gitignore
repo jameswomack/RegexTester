@@ -34,6 +34,7 @@ build/
 .svn
 CVS
 
+*.DS_Store
 
 # automatic backup files
 *~.nib
